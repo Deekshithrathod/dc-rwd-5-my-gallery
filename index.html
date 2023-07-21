@@ -6,45 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1,
   maximum-scale=5" />
 
-  <link rel="icon" href="devchallenges.png" />
+  <link rel="icon" href="profilePhoto.png" />
 
-  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" /> -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Devchallenges</title>
+  <title>My Gallery</title>
 
 </head>
 
 <body>
-  <div class="welcome">
-    <div class="welcome-text">
-      <h1>
-        Welcome to
-        <a href="https://devchallenges.io/" target="_blank">devchallenges.io</a>
-      </h1>
-
-      <p>
-        If you have any questions, don't hesitate to ask on Discord. Here are
-        7 general steps to complete the challenge:
-      </p>
+  <header>
+    <div class="profile">
+      <img src="profilePhoto.png" alt="Profile photo of a man">
+      <div>
+        <p class="name">Rodney Cotton</p>
+        <p class="location">Helsinki, Finland</p>
+      </div>
     </div>
-
-    <ul>
-      <li><b>Step 1:</b> Create a new repository on github</li>
-      <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-      <li>
-        <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-      </li>
-      <li><b>Step 4:</b> Complete all user stories</li>
-      <li><b>Step 5:</b> Update README.md</li>
-      <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-      <li>
-        <b>Step 7:</b> Share your solution on Discord, Twitter and other
-        platforms to ask for feedback
-      </li>
-    </ul>
-  </div>
+    <div class="profile-info">
+      <div>
+        <p class="value">100</p>
+        <p class="metric">posts</p>
+      </div>
+      <div>
+        <p class="value">2,242</p>
+        <p class="metric">Followers</p>
+      </div>
+      <div>
+        <p class="value">1,432</p>
+        <p class="metric">Following</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <img id="a" src="photo1.png" alt="a potted plant on stool">
+    <img id="b" src="photo2.png" alt="black sofa">
+    <img id="c" src="photo3.png" alt="a bath tub">
+    <img id="d" src="photo4.png" alt="a lamp">
+    <img id="e" src="photo5.png" alt="a plant">
+    <img id="f" src="photo6.png" alt="some wood made with bamboo">
+  </main>
+  <footer>created by deekshith - devChallenges.io</footer>
 </body>
 
 </html>
