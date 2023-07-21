@@ -116,7 +116,7 @@ footer {
   padding-bottom: 20px;
 }
 
-@media (max-width: 390px) {
+@media (min-width: 600px) {
   header {
     width: 70%;
     margin: 30px auto 40px auto;
