@@ -36,9 +36,9 @@
 
 ## Overview
 
-|                 Desktop                 |               Mobile                |
-| :-------------------------------------: | :---------------------------------: |
-| ![Project On Desktop](view-desktop.png) | ![Demo On Desktop](view-mobile.png) |
+|                    Desktop                     |                   Mobile                   |
+| :--------------------------------------------: | :----------------------------------------: |
+| ![Project On Desktop](public/demo-desktop.png) | ![Demo On Desktop](public/demo-mobile.png) |
 
 - Where can I see your demo? [here](https://devchallenges-rwd-5.onrender.com)
 - What have you learned/improved? CSS Grids
@@ -54,6 +54,10 @@
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) was to build an application to complete the given user stories.
+
+#### User Stories
+
+- [x] User story: I can see a page following the given design
 
 ## Acknowledgements
 
