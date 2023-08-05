@@ -4,87 +4,91 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
+
+  height: 100vh;
+  padding: 2rem 1rem;
 }
 
 header {
-  width: 25%;
-  min-width: 360px;
-  max-width: 400px;
-  margin: 60px auto 64px auto;
   text-align: center;
+
+  width: 70%;
+  margin: 0 auto;
+}
+.profile {
+  margin-top: 2rem;
 }
 
 .profile > img {
-  width: 156px;
-  margin-bottom: 16px;
-  border-radius: 16px;
+  border-radius: 1rem;
+
+  width: 6.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .name {
   color: #4e5150;
-  font-size: 24px;
-  margin-bottom: 8px;
+  font-size: 0.875rem;
 }
 
 .location {
   color: #a9a9a9;
-  font-size: 14px;
-  margin-bottom: 24px;
+  font-size: 0.625rem;
+  margin-top: 0.25rem;
 }
 
 .profile-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0 1rem;
+
+  margin-top: 0.75rem;
 }
 
 .profile-info > div {
-  width: 100px;
-  height: 67px;
-  flex-shrink: 0;
-  border-radius: 12px;
-  background: #e5e5e5;
+  background-color: #e5e5e5;
+  border-radius: 0.75rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  width: 4rem;
+  padding: 0.625rem;
 }
 
 .value {
   color: #4e5150;
-  font-size: 18px;
+  font-size: 0.75rem;
 }
 
 .metric {
-  color: var(--gray-4, #bdbdbd);
-  font-size: 14px;
+  color: #bdbdbd;
+  font-size: 0.75rem;
 }
 
 main > img {
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
 main {
-  width: 80%;
-  margin: 0 auto 60px;
-
+  margin-top: 2.5rem;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px 300px 300px;
   grid-template-areas:
     "a b b"
     "c c d"
     "f e d";
-  gap: 30px 30px;
+  gap: 0.75rem;
 }
 
 #a {
@@ -108,65 +112,76 @@ main {
 }
 
 footer {
-  color: #a9a9a9;
+  color: #bdbdbd;
+  font-size: 0.875rem;
+  font-weight: 500;
   text-align: center;
-  font-size: 14px;
 
   margin-top: auto;
-  padding-bottom: 20px;
 }
 
-@media (max-width: 600px) {
+footer > b > a {
+  color: #bdbdbd;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 4rem 1rem;
+  }
+
   header {
-    width: 70%;
-    margin: 30px auto 40px auto;
-    text-align: center;
+    max-width: 62.5rem;
+  }
+
+  .profile {
+    margin-top: 2rem;
   }
 
   .profile > img {
-    width: 100px;
-    margin-bottom: 12px;
+    width: 10rem;
   }
 
   .name {
-    font-size: 14px;
-    margin-bottom: 4px;
+    font-size: 1.5em;
+    margin-top: 1rem;
   }
 
   .location {
-    font-size: 10px;
-    margin-bottom: 12px;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
   }
 
   .profile-info {
-    display: flex;
-    justify-content: space-between;
+    gap: 0 1.5rem;
+
+    margin-top: 1.5rem;
   }
 
   .profile-info > div {
-    width: 78px;
-    height: 52px;
+    width: 6.25rem;
+    padding: 0.875rem;
   }
 
   .value {
-    font-size: 12px;
+    font-size: 1.125rem;
   }
 
   .metric {
-    font-size: 12px;
-  }
-
-  main > img {
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    font-size: 1.125rem;
   }
 
   main {
-    width: 80%;
+    gap: 2rem;
 
-    grid-template-rows: 110px 110px 110px;
-    gap: 12px 12px;
+    width: 80%;
+    max-width: 62.5rem;
+
+    margin: 2.5rem auto;
+  }
+
+  footer {
+    padding-bottom: 2rem;
   }
 }
